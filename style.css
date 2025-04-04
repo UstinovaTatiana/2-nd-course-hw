@@ -158,7 +158,7 @@ a {
 }
 .play__img_big {
   position: absolute;
-  right: 0px;
+  right: -110px;
   top: 120px;
 }
 .play__img_1 {
