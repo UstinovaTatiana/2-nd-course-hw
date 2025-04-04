@@ -146,7 +146,13 @@ a {
         }
     }*/
 }
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 32px;
 
+}
 .play {
     display: flex;
     flex-wrap: wrap;
