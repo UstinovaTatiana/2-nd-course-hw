@@ -239,4 +239,76 @@ a {
   font-weight: 700;
   line-height: 39px;
   margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    position: relative;
+  }
+  .header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .header-main__title {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    height: 196px;
+    padding-top: 147px;
+  }
+  .header-main__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 296px;
+    margin-top: 24px;
+  }
+  .header-main__btn {
+    width: 285px;
+    height: 55px;
+    margin-top: 36px;
+  }
+  .header-main__img_big {
+    right: -105px;
+    top: -85px;
+  }
+  .header-main__img_1 {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    left: 37px;
+    top: 97px;
+  }
+  .header-main__img_2 {
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    left: 91px;
+    top: 64px;
+  }
+  .header-main__img_3 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    bottom: 125px;
+    left: 272px;
+  }
+  .header-main__img_4 {
+    position: absolute;
+    height: 41px;
+    width: 39px;
+    left: 303px;
+    bottom: 79px;
+  }
+  .game {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
