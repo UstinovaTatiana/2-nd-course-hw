@@ -159,6 +159,8 @@ a {
 
 .game {
     background-color: rgb(32, 32, 39);
+    padding-bottom: 50px;
+
 }
 
 .play {
@@ -221,7 +223,7 @@ a {
 
     &-box {
         border-radius: 30px;
-        background: rgb(247, 247, 247);
+        background-color: rgb(247, 247, 247);
         width: 378px;
         overflow: hidden;
         transition: transform 1s;
@@ -267,6 +269,146 @@ a {
             }
         }
 
+    }
+}
+
+.main {
+    background-color: rgb(32, 32, 39);
+    padding-bottom: 144px;
+
+    &-game {
+        position: relative;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 46px;
+
+        &__img_1 {
+            position: absolute;
+            height: 35px;
+            width: 35px;
+            top: 93px;
+            right: 124px;
+
+        }
+
+        &__img_2 {
+            position: absolute;
+            height: 69px;
+            width: 69px;
+            top: 126px;
+            right: 45px;
+        }
+
+        &__img_3 {
+            position: absolute;
+            height: 41px;
+            width: 41px;
+            right: 150px;
+            bottom: -95px;
+        }
+
+
+        &__img_4 {
+            position: absolute;
+            height: 69px;
+            width: 69px;
+            bottom: -79px;
+            right: 40px;
+        }
+
+
+        &__title {
+            color: rgb(255, 255, 255);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+            letter-spacing: 0px;
+            text-align: left;
+            margin-bottom: 72px;
+        }
+    }
+}
+
+
+.game-box {
+    border-radius: 30px;
+    background-color: rgb(247, 247, 247);
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 32px;
+
+    &:nth-child(even) {
+        flex-direction: row;
+    }
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    &__img {
+        width: 600px;
+    }
+
+    &__desc {
+        padding: 48px;
+
+        &-text {
+            color: rgb(32, 32, 39);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+            margin-bottom: 24px;
+
+
+            &_1 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0px;
+                text-align: left;
+                width: 504px;
+
+            }
+        }
+
+        &-btn {
+            width: 247px;
+            height: 66px;
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: rgb(255, 255, 255);
+            font-family: inherit;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 36px;
+        }
+
+        &-btn:hover {
+            background-color: #FFFFFF;
+            color: black;
+        }
+    }
+
+}
+
+.footer {
+    background-color: rgb(189, 237, 53);
+    height: 150px;
+
+    &__info {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 61px;
+        height: 29px;
     }
 }
 

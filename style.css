@@ -144,6 +144,7 @@ a {
 
 .game {
   background-color: rgb(32, 32, 39);
+  padding-bottom: 50px;
 }
 
 .play {
@@ -200,7 +201,7 @@ a {
 }
 .play-box {
   border-radius: 30px;
-  background: rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247);
   width: 378px;
   overflow: hidden;
   transition: transform 1s;
@@ -239,6 +240,124 @@ a {
   font-weight: 700;
   line-height: 39px;
   margin-top: 16px;
+}
+
+.main {
+  background-color: rgb(32, 32, 39);
+  padding-bottom: 144px;
+}
+.main-game {
+  position: relative;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 46px;
+}
+.main-game__img_1 {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  top: 93px;
+  right: 124px;
+}
+.main-game__img_2 {
+  position: absolute;
+  height: 69px;
+  width: 69px;
+  top: 126px;
+  right: 45px;
+}
+.main-game__img_3 {
+  position: absolute;
+  height: 41px;
+  width: 41px;
+  right: 150px;
+  bottom: -95px;
+}
+.main-game__img_4 {
+  position: absolute;
+  height: 69px;
+  width: 69px;
+  bottom: -79px;
+  right: 40px;
+}
+.main-game__title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 72px;
+}
+
+.game-box {
+  border-radius: 30px;
+  background-color: rgb(247, 247, 247);
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 32px;
+}
+.game-box:nth-child(even) {
+  flex-direction: row;
+}
+.game-box:last-child {
+  margin-bottom: 0px;
+}
+.game-box__img {
+  width: 600px;
+}
+.game-box__desc {
+  padding: 48px;
+}
+.game-box__desc-text {
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.game-box__desc-text_1 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 504px;
+}
+.game-box__desc-btn {
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 36px;
+}
+.game-box__desc-btn:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.footer {
+  background-color: rgb(189, 237, 53);
+  height: 150px;
+}
+.footer__info {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 61px;
+  height: 29px;
 }
 
 @media (max-width: 767px) {
