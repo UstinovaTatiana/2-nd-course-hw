@@ -46,7 +46,7 @@ a {
             margin-top: 24px;
             width: 720px;
 
-            &_1 {
+            &-1 {
                 font-weight: 600;
                 color: black;
             }
@@ -73,13 +73,13 @@ a {
             color: black;
         }
 
-        &__img_big {
+        &__img-big {
             position: absolute;
             right: -500px;
             top: -335px;
         }
 
-        &__img_3 {
+        &__img-3 {
             position: absolute;
             left: 948px;
             bottom: 222px;
@@ -87,7 +87,7 @@ a {
             width: 37px;
         }
 
-        &__img_4 {
+        &__img-4 {
             position: absolute;
             height: 83px;
             width: 83px;
@@ -95,7 +95,7 @@ a {
             bottom: 146px;
         }
 
-        &__img_1 {
+        &__img-1 {
             position: absolute;
             left: 63px;
             top: 94px;
@@ -103,7 +103,7 @@ a {
             width: 57px;
         }
 
-        &__img_2 {
+        &__img-2 {
             position: absolute;
             left: 156px;
             top: 69px;
@@ -172,14 +172,14 @@ a {
     padding-left: 120px;
     position: relative;
 
-    &__img_big {
+    &__img-big {
         position: absolute;
         right: -110px;
         top: 120px;
 
     }
 
-    &__img_1 {
+    &__img-1 {
         position: absolute;
         height: 31px;
         width: 31px;
@@ -187,7 +187,7 @@ a {
         top: 770px;
     }
 
-    &__img_2 {
+    &__img-2 {
         position: absolute;
         height: 55px;
         width: 55px;
@@ -250,7 +250,7 @@ a {
             padding-left: 32px;
             padding-bottom: 36px;
 
-            &_1 {
+            &-1 {
                 box-sizing: border-box;
                 font-size: 16px;
                 font-weight: 500;
@@ -261,7 +261,7 @@ a {
                 align-content: center;
             }
 
-            &_2 {
+            &-2 {
                 font-size: 32px;
                 font-weight: 700;
                 line-height: 39px;
@@ -282,7 +282,7 @@ a {
         padding-right: 120px;
         padding-top: 46px;
 
-        &__img_1 {
+        &__img-1 {
             position: absolute;
             height: 35px;
             width: 35px;
@@ -291,7 +291,7 @@ a {
 
         }
 
-        &__img_2 {
+        &__img-2 {
             position: absolute;
             height: 69px;
             width: 69px;
@@ -299,7 +299,7 @@ a {
             right: 45px;
         }
 
-        &__img_3 {
+        &__img-3 {
             position: absolute;
             height: 41px;
             width: 41px;
@@ -308,7 +308,7 @@ a {
         }
 
 
-        &__img_4 {
+        &__img-4 {
             position: absolute;
             height: 69px;
             width: 69px;
@@ -364,7 +364,7 @@ a {
             margin-bottom: 24px;
 
 
-            &_1 {
+            &-1 {
                 font-size: 24px;
                 font-weight: 400;
                 line-height: 32px;
