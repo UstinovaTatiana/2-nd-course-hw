@@ -19,6 +19,7 @@ a {
 
 .header {
   background-color: #E1FF8F;
+  overflow-x: hidden;
 }
 .header-main {
   height: 800px;
@@ -66,7 +67,6 @@ a {
   font-weight: 700;
   line-height: 78px;
   text-align: left;
-  height: 156px;
   padding-top: 196px;
   letter-spacing: 0px;
 }
@@ -143,6 +143,9 @@ a {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 32px;
+}
+.box_1 {
+  display: none;
 }
 
 .game {
@@ -372,6 +375,7 @@ a {
     position: relative;
   }
   .header-main {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -383,52 +387,316 @@ a {
     font-size: 40px;
     line-height: 49px;
     text-align: center;
-    height: 196px;
     padding-top: 147px;
   }
   .header-main__subtitle {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    width: 296px;
     margin-top: 24px;
+    width: 296px;
   }
   .header-main__btn {
     width: 285px;
     height: 55px;
     margin-top: 36px;
   }
-  .header-main__img_big {
+  .header-main__img-big {
     right: -105px;
     top: -85px;
   }
-  .header-main__img_1 {
+  .header-main__img-1 {
     position: absolute;
     height: 35px;
     width: 35px;
     left: 37px;
     top: 97px;
   }
-  .header-main__img_2 {
+  .header-main__img-2 {
     position: absolute;
     height: 21px;
     width: 21px;
     left: 91px;
     top: 64px;
   }
-  .header-main__img_3 {
+  .header-main__img-3 {
     position: absolute;
     height: 18px;
     width: 18px;
     bottom: 125px;
     left: 272px;
   }
-  .header-main__img_4 {
+  .header-main__img-4 {
     position: absolute;
     height: 41px;
     width: 39px;
     left: 303px;
     bottom: 79px;
+  }
+  .game {
+    display: none;
+  }
+  .main {
+    overflow-x: hidden;
+    padding-bottom: 49px;
+  }
+  .main-game {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 46px;
+  }
+  .main-game__title {
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 48px;
+  }
+  .main-game__img-1 {
+    display: none;
+  }
+  .main-game__img-2 {
+    display: none;
+  }
+  .main-game__img-3 {
+    display: none;
+  }
+  .main-game__img-4 {
+    display: none;
+  }
+  .game-box {
+    overflow-x: hidden;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    width: 343px;
+    height: auto;
+  }
+  .game-box__img {
+    height: 285px;
+  }
+  .game-box__desc {
+    padding-top: 29px;
+    padding-right: 29px;
+    padding-left: 29px;
+    padding-bottom: 33px;
+  }
+  .game-box__desc-text {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 16px;
+  }
+  .game-box__desc-text-1 {
+    font-size: 16px;
+    line-height: 20px;
+    width: 285px;
+  }
+  .game-box__desc-btn {
+    width: 285px;
+    height: 55px;
+    margin-top: 32px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+  .footer {
+    overflow-x: hidden;
+    height: 100px;
+  }
+  .footer__info {
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1437px) {
+  .play-box {
+    width: 340px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .center {
+    padding-left: calc(50% - 512px);
+    padding-right: calc(50% - 512px);
+  }
+  .header-main {
+    overflow: hidden;
+  }
+  .header-main__img-big {
+    right: 0px;
+    top: 0px;
+  }
+  .header-main__img-3 {
+    left: 900px;
+    bottom: 215px;
+  }
+  .header-main__img-4 {
+    left: 940px;
+    bottom: 125px;
+  }
+  .box {
+    display: none;
+  }
+  .box_1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .play {
+    gap: 24px;
+  }
+  .play__img-big {
+    right: -350px;
+    top: 120px;
+  }
+  .play__img-1 {
+    left: 25px;
+    top: 770px;
+  }
+  .play__img-2 {
+    left: 40px;
+    top: 822px;
+  }
+  .play-text {
+    width: 1025px;
+  }
+  .play-box {
+    width: 340px;
+  }
+  .play-box__link-img {
+    height: 312px;
+  }
+  .play-box__link-text {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 34px;
+  }
+  .play-box__link-text-1 {
+    height: 36px;
+  }
+  .play-box__link-text-2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    margin-top: 16px;
+  }
+}
+@media (min-width: 834px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 417px);
+    padding-right: calc(50% - 417px);
+  }
+  .header-main {
+    overflow: hidden;
+  }
+  .header-main__title {
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 147px;
+  }
+  .header-main__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 24px;
+    width: 400px;
+    margin-left: 15%;
+  }
+  .header-main__img-big {
+    right: -100px;
+    top: -70px;
+  }
+  .header-main__img-3 {
+    left: 700px;
+    bottom: 200px;
+  }
+  .header-main__img-4 {
+    left: 750px;
+    bottom: 120px;
+  }
+  .header-main__btn {
+    margin-top: 36px;
+    margin-left: 25%;
+  }
+  .box {
+    display: none;
+  }
+  .box_1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .play {
+    gap: 24px;
+  }
+  .play__img-big {
+    display: none;
+  }
+  .play__img-1 {
+    left: 25px;
+    top: 770px;
+  }
+  .play__img-2 {
+    left: 40px;
+    top: 822px;
+  }
+  .play-text {
+    width: 834px;
+    margin-bottom: 48px;
+  }
+  .play-text__subtitle {
+    width: 594px;
+  }
+  .play-box {
+    width: 285px;
+  }
+  .play-box__link-img {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: calc(50% - 384px);
+    padding-right: calc(50% - 384px);
+  }
+  .header-main {
+    overflow: hidden;
+  }
+  .header-main__title {
+    text-align: center;
+    font-size: 42px;
+    line-height: 49px;
+    padding-top: 147px;
+  }
+  .header-main__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 24px;
+    width: 400px;
+    margin-left: 10%;
+  }
+  .header-main__btn {
+    width: 285px;
+    height: 55px;
+    margin-top: 36px;
+    margin-left: 20%;
+  }
+  .header-main__img-big {
+    right: -100px;
+    top: -70px;
+  }
+  .header-main__img-3 {
+    bottom: 190px;
+    left: 550px;
+  }
+  .header-main__img-4 {
+    left: 610px;
+    bottom: 100px;
   }
   .game {
     display: none;

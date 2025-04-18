@@ -1,0 +1,69 @@
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header-main {
+    overflow: hidden;
+  }
+  .header-main__img-big {
+    right: 0px;
+    top: 0px;
+  }
+}
+@media (min-width: 834px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 512px);
+    padding-right: calc(50% - 512px);
+  }
+  .header-main {
+    overflow: hidden;
+  }
+  .header-main__img-big {
+    right: -100px;
+    top: -70px;
+  }
+  .header-main__img-3 {
+    left: 850px;
+  }
+  .header-main__img-4 {
+    left: 940px;
+  }
+  .header-main__title {
+    font-size: 50px;
+    line-height: 49px;
+    padding-top: 147px;
+  }
+  .game {
+    display: none;
+  }
+  .main-game {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header-main {
+    overflow: hidden;
+  }
+  .header-main__title {
+    text-align: left;
+    font-size: 42px;
+    line-height: 49px;
+    padding-top: 147px;
+  }
+  .header-main__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 24px;
+    width: 400px;
+  }
+  .header-main__img-big {
+    right: -100px;
+    top: -70px;
+  }
+}/*# sourceMappingURL=_tablet.css.map */
