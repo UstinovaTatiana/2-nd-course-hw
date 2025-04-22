@@ -335,6 +335,9 @@ a {
   width: 504px;
 }
 .game-box__desc-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 247px;
   height: 66px;
   border-radius: 60px;
