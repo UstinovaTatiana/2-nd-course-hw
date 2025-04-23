@@ -96,13 +96,13 @@ console.log(userAge());
 function mult(c, d) {
     let x = Number(c);
     let y = Number(d);
-if (!isNaN(x, y)) {
-    return x * y;
-}
-else {
-    return 'Одно или оба значения не явлются числом';
-}
-    
+    if (!isNaN(x) && !isNaN(y)) {
+        return x * y;
+    }
+    else {
+        return 'Одно или оба значения не явлются числом';
+    }
+
 }
 console.log(mult(2, 3));
 console.log(mult('два', 3));
@@ -127,7 +127,7 @@ function user() {
     } else {
         return 'Переданный параметр не является числом';
     }
-    
+
 }
 console.log(user());
 
@@ -137,23 +137,23 @@ console.log(user());
 //Оба объекта должны иметь:
 //Метод getArea, который возвращает площадь круга, вычисляемую через радиус.
 //Метод getPerimeter, который возвращает периметр окружности.
- let circle1 = {
+let circle1 = {
     radius: 3,
     getArea: getRectangleArea,
     getPerimeter: getRectanglePerimeter,
- };
- let circle2 = {
+};
+let circle2 = {
     radius: 2,
     getArea: getRectangleArea,
     getPerimeter: getRectanglePerimeter,
- };
- function getRectangleArea() {
+};
+function getRectangleArea() {
     return Math.PI * Math.pow(this.radius, 2);
- }
- function getRectanglePerimeter() {
+}
+function getRectanglePerimeter() {
     return 2 * Math.PI * this.radius;
- }
- console.log(circle1.getArea());
- console.log(circle1.getPerimeter());
- console.log(circle2.getArea());
- console.log(circle2.getPerimeter());
+}
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
