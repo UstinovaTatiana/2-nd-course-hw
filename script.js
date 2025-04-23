@@ -1,23 +1,33 @@
-let randomInt = Math.floor(Math.random() * 100) + 1;
-
+function getUserNumber() {
+    let input = prompt("Попробуй угадать число от 1 до 100");
+    if (input === null) {
+        return null;
+    }
+    let userNumber = parseFloat(input);
+    if (isNaN(userNumber) || !Number.isFinite(userNumber)) {
+        alert('Пожалуйста, введите число.');
+        return getUserNumber();
+    }
+    return userNumber;
+}
 function guessNumber() {
     while (true) {
-        let input = Number(prompt("Попробуй угадать число от 1 до 100"));
+        let userNumber = getUserNumber();
 
-        if (input === null) {
-            alert('Попробуй еще раз');
-            return;
+        if (userNumber === null) {
+            break;
         }
-        if (input === randomInt) {
+        if (userNumber === randomInt) {
             alert(`Вы угадали число ${randomInt}`);
             break;
         }
-        else if (input < randomInt) {
+        else if (userNumber < randomInt) {
             alert('Число должно быть больше');
-
         }
         else {
             alert('Число должно быть меньше');
         }
+
     }
-};
+}
+let randomInt = Math.floor(Math.random() * 100) + 1;
