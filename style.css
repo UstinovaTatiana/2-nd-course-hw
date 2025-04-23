@@ -402,6 +402,7 @@ a {
     width: 285px;
     height: 55px;
     margin-top: 36px;
+    font-size: 16px;
   }
   .header-main__img-big {
     right: -105px;
@@ -493,6 +494,18 @@ a {
     line-height: 20px;
     width: 285px;
   }
+  .game-box__desc-text-1_1 {
+    width: 249px;
+  }
+  .game-box__desc-text-1_2 {
+    width: 233px;
+  }
+  .game-box__desc-text-1_3 {
+    width: 275px;
+  }
+  .game-box__desc-text-1_4 {
+    width: 245px;
+  }
   .game-box__desc-btn {
     width: 285px;
     height: 55px;
@@ -519,7 +532,7 @@ a {
     display: none;
   }
   .game-box {
-    /*width: 285px;*/
+    width: 285px;
   }
   .game-box__img {
     height: 285px;
@@ -532,7 +545,7 @@ a {
     padding-bottom: 25px;
   }
   .game-box__desc-text-1 {
-    width: 245px;
+    max-width: 245px;
   }
   .game-box__desc-btn {
     width: 250px;

@@ -6,17 +6,17 @@
 
     .header {
         position: relative;
-        
+
 
         &-main {
-            
+
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 700px;
             padding-left: 0px;
             padding-right: 0px;
-            
+
 
 
             &__title {
@@ -40,6 +40,7 @@
                 width: 285px;
                 height: 55px;
                 margin-top: 36px;
+                font-size: 16px;
             }
 
             &__img-big {
@@ -94,7 +95,7 @@
         &-game {
             padding-left: 0px;
             padding-right: 0px;
-            
+
 
             &__title {
                 font-size: 40px;
@@ -153,6 +154,20 @@
                     line-height: 20px;
                     width: 285px;
 
+                    &_1 {
+                        width: 249px;
+                    }
+
+                    &_2 {
+                        width: 233px;
+                    }
+
+                    &_3 {
+                        width: 275px;
+                    }
+                    &_4{
+                        width: 245px;
+                    }
                 }
             }
 
@@ -192,7 +207,7 @@
     }
 
     .game-box {
-        /*width: 285px;*/
+        width: 285px;
 
         &__img {
             height: 285px;
@@ -200,19 +215,20 @@
         }
 
         &__desc {
-            
+
             padding-top: 20px;
             padding-right: 20px;
             padding-left: 20px;
             padding-bottom: 25px;
 
-            &-text-1{
-                width: 245px;
+            &-text-1 {
+                max-width: 245px;
             }
+
             &-btn {
                 width: 250px;
                 height: 50px;
-               
+
 
             }
 
