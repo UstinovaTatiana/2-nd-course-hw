@@ -109,7 +109,6 @@
     }
 
     .header-main {
-        overflow: hidden;
 
         &__title {
             text-align: center;
@@ -162,13 +161,13 @@
             gap: 24px;
         }
 
-        
+
 
     }
 
     .play {
         gap: 24px;
-        
+
         &__img-big {
             display: none;
 
@@ -199,7 +198,7 @@
 
 
             &__link-img {
-                height: 300px;
+                height: 250px;
 
             }
 
@@ -207,6 +206,41 @@
 
         }
 
+    }
+
+    .game-box {
+        height: 300px;
+
+        &__img {
+            width: 300px;
+        }
+
+        &__desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 24px;
+
+            &-text {
+                font-size: 32px;
+                line-height: 35px;
+                margin-bottom: 16px;
+                width: 247px;
+
+                &-1 {
+                    font-size: 16px;
+                    line-height: 20px;
+                    width: 240px;
+
+                }
+            }
+
+            &-btn {
+                margin-top: 24px;
+                width: 220px;
+                height: 50px;
+            }
+        }
     }
 
 
@@ -266,6 +300,41 @@
 
     .game {
         display: none;
+    }
+    .game-box {
+        height: 250px;
+
+        &__img {
+            width: 250px;
+        }
+
+        &__desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+
+            &-text {
+                font-size: 24px;
+                line-height: 30px;
+                margin-bottom: 12px;
+                width: 230px;
+
+                &-1 {
+                    font-size: 14px;
+                    line-height: 18px;
+                    width: 240px;
+
+                }
+            }
+
+            &-btn {
+                margin-top: 12px;
+                width: 200px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
     }
 
 }
