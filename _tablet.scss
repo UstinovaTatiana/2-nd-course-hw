@@ -1,3 +1,271 @@
-@media(max-width:1024px) {
-   
+@media (min-width:1201px) and (max-width:1437px) {
+    .play-box {
+        width: 340px;
+        column-gap: 24px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .center {
+        padding-left: calc(50% - 512px);
+        padding-right: calc(50% - 512px);
+    }
+
+    .header-main {
+        overflow: hidden;
+
+        &__img-big {
+            right: 0px;
+            top: 0px;
+        }
+
+        &__img-3 {
+            left: 900px;
+            bottom: 215px;
+        }
+
+        &__img-4 {
+            left: 940px;
+            bottom: 125px;
+        }
+    }
+
+    .box {
+        display: none;
+
+        &_1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .play {
+        gap: 24px;
+
+
+        &__img-big {
+            right: -350px;
+            top: 120px;
+
+        }
+
+        &__img-1 {
+            left: 25px;
+            top: 770px;
+        }
+
+        &__img-2 {
+            left: 40px;
+            top: 822px;
+        }
+
+        &-text {
+            width: 1025px;
+        }
+
+        &-box {
+            width: 340px;
+
+
+            &__link-img {
+                height: 312px;
+
+            }
+
+            &__link-text {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-left: 30px;
+                padding-bottom: 34px;
+
+                &-1 {
+                    height: 36px;
+                }
+
+                &-2 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 39px;
+                    margin-top: 16px;
+                }
+
+            }
+        }
+
+
+
+
+
+    }
+}
+
+@media(min-width:834px) and (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - 417px);
+        padding-right: calc(50% - 417px);
+    }
+
+    .header-main {
+        overflow: hidden;
+
+        &__title {
+            text-align: center;
+            font-size: 50px;
+            line-height: 60px;
+            padding-top: 147px;
+        }
+
+
+        &__subtitle {
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 24px;
+            width: 400px;
+            margin-left: 15%;
+
+        }
+
+        &__img-big {
+            right: -100px;
+            top: -70px;
+        }
+
+        &__img-3 {
+            left: 700px;
+            bottom: 200px;
+        }
+
+        &__img-4 {
+            left: 750px;
+            bottom: 120px;
+        }
+
+        &__btn {
+            margin-top: 36px;
+            margin-left: 25%;
+        }
+
+
+    }
+
+    .box {
+        display: none;
+
+        &_1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        
+
+    }
+
+    .play {
+        gap: 24px;
+        
+        &__img-big {
+            display: none;
+
+        }
+
+        &__img-1 {
+            left: 25px;
+            top: 770px;
+        }
+
+        &__img-2 {
+            left: 40px;
+            top: 822px;
+        }
+
+        &-text {
+            width: 834px;
+            margin-bottom: 48px;
+
+            &__subtitle {
+                width: 594px;
+            }
+        }
+
+        &-box {
+            width: 285px;
+
+
+
+            &__link-img {
+                height: 300px;
+
+            }
+
+
+
+        }
+
+    }
+
+
+}
+
+
+@media (min-width:768px) and (max-width:833px) {
+    .center {
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+    }
+
+    .header-main {
+        overflow: hidden;
+
+        &__title {
+            text-align: center;
+            font-size: 42px;
+            line-height: 49px;
+            padding-top: 147px;
+        }
+
+
+        &__subtitle {
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 24px;
+            width: 400px;
+            margin-left: 10%;
+
+        }
+
+        &__btn {
+            width: 285px;
+            height: 55px;
+            margin-top: 36px;
+            margin-left: 20%;
+        }
+
+        &__img-big {
+            right: -100px;
+            top: -70px;
+        }
+
+        &__img-3 {
+            bottom: 190px;
+            left: 550px;
+        }
+
+        &__img-4 {
+            left: 610px;
+            bottom: 100px;
+        }
+
+    }
+
+    .game {
+        display: none;
+    }
+
 }
