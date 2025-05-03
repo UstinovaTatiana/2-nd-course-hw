@@ -9,13 +9,14 @@
 
 
         &-main {
-            overflow-x: hidden;
+
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 700px;
             padding-left: 0px;
             padding-right: 0px;
+
 
 
             &__title {
@@ -39,6 +40,7 @@
                 width: 285px;
                 height: 55px;
                 margin-top: 36px;
+                font-size: 16px;
             }
 
             &__img-big {
@@ -87,16 +89,19 @@
     .main {
         overflow-x: hidden;
         padding-bottom: 49px;
+        display: flex;
+        justify-content: center;
 
         &-game {
             padding-left: 0px;
             padding-right: 0px;
-            padding-top: 46px;
+
 
             &__title {
                 font-size: 40px;
                 line-height: 49px;
                 margin-bottom: 48px;
+                width: 250px;
             }
 
             &__img-1 {
@@ -125,11 +130,12 @@
         overflow-x: hidden;
         margin-bottom: 24px;
         flex-wrap: wrap;
-        width: 343px;
+        max-width: 343px;
         height: auto;
 
         &__img {
             height: 285px;
+            width: 343px;
         }
 
         &__desc {
@@ -148,6 +154,20 @@
                     line-height: 20px;
                     width: 285px;
 
+                    &_1 {
+                        width: 249px;
+                    }
+
+                    &_2 {
+                        width: 233px;
+                    }
+
+                    &_3 {
+                        width: 275px;
+                    }
+                    &_4{
+                        width: 245px;
+                    }
                 }
             }
 
@@ -155,7 +175,6 @@
                 width: 285px;
                 height: 55px;
                 margin-top: 32px;
-                color: rgb(255, 255, 255);
                 font-size: 16px;
 
             }
@@ -175,4 +194,45 @@
         }
     }
 
+}
+
+@media (min-width:320px) and (max-width:374px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .game {
+        display: none;
+    }
+
+    .game-box {
+        width: 285px;
+
+        &__img {
+            height: 285px;
+            width: 285px;
+        }
+
+        &__desc {
+
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 25px;
+
+            &-text-1 {
+                max-width: 245px;
+            }
+
+            &-btn {
+                width: 250px;
+                height: 50px;
+
+
+            }
+
+        }
+
+    }
 }
