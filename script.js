@@ -11,6 +11,7 @@ function getUserNumber() {
     return userNumber;
 }
 function guessNumber() {
+    let randomInt = Math.floor(Math.random() * 100) + 1;
     while (true) {
         let userNumber = getUserNumber();
 
@@ -30,12 +31,13 @@ function guessNumber() {
 
     }
 }
-let randomInt = Math.floor(Math.random() * 100) + 1;
 
 
 
 
-function getUserAnswer() {
+
+function getUserAnswer(randomOperation, num1, num2) {
+    
     let input = prompt(`Попробуйте решить ${num1} ${randomOperation} ${num2}`);
     if (input === null) {
         return null;
@@ -48,16 +50,9 @@ function getUserAnswer() {
     return userAnswer;
 }
 
-const operation = ['+', '-', '*', '/'];
-const randomOperation = operation[Math.floor(Math.random() * operation.length)];
-/*console.log(randomOperation);*/
-let num1 = Math.floor(Math.random() * 20);
-let num2 = Math.floor(Math.random() * 20);
-/*console.log(num1);
-console.log(num2);*/
 
-function calculate(operation, num1, num2) {
-    switch (operation) {
+function calculate(Operation, num1, num2) {
+    switch (Operation) {
         case '+':
             return num1 + num2;
         case '-':
@@ -70,30 +65,35 @@ function calculate(operation, num1, num2) {
         default:
             return 'invalid operation';
     }
-
-
 }
-/*console.log(calculate(randomOperation, num1, num2));*/
 
 function guessOperation() {
+    const operation = ['+', '-', '*', '/']; 
+    const randomOperation = operation[Math.floor(Math.random() * operation.length)];
+    const num1 = Math.floor(Math.random() * 10);
+    const num2 = Math.floor(Math.random() * 10); 
+    
     while (true) {
-        let userAnswer = getUserAnswer();
+        let userAnswer = getUserAnswer(randomOperation, num1, num2);
 
         if (userAnswer === null) {
             break;
         }
+        const result = calculate(randomOperation, num1, num2);
         if (userAnswer === result) {
             alert(`Верно`);
-            return;
+            break;
         }
         else {
             alert('Не верно');
         }
 
     }
-}
-let result = calculate(randomOperation, num1, num2);
 
-/*console.log(result);*/
+}
+
+
+
+
 
 
