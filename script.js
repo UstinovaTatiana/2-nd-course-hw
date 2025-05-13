@@ -45,7 +45,7 @@ function getUserAnswer(randomOperation, num1, num2) {
     let userAnswer = parseFloat(input);
     if (isNaN(userAnswer) || !Number.isFinite(userAnswer)) {
         alert('Пожалуйста, введите ответ.');
-        return getUserAnswer();
+        return getUserAnswer(randomOperation, num1, num2);
     }
     return userAnswer;
 }
