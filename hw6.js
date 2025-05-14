@@ -82,18 +82,38 @@ console.log(num(2, 6));
 
 //Задание 8
 //Вывести в консоль текущую дату.
-
+console.log(new Date());
 
 
 //Задание 9
 //Создать переменную currentDate, хранящую текущую дату. Вывести дату, которая наступит через 73 дня после текущей.
+const currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
 
 
 //Задание 10
 //Написать функцию, которая принимает дату и возвращает ее в формате:
 //Дата: [число] [месяц на русском] [год] — это [день недели на русском].
 //Время: [часы]:[минуты]:[секунды]
+function formatDate(date) {
+    const days = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'];
+    const months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
+    const year = date.getFullYear();
+    const day = date.getDate();
+    const dayWeek = days[date.getDay()];
+    const month = date.getMonth();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    return`
+    Дата: ${day} ${months[month]} ${year} - ${dayWeek}.
+    Время: ${hours}:${minutes}:${seconds}`;
+
+   
 
 
+}
 
+console.log(formatDate(new Date()));
 
