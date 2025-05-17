@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Task1">
+        <h1 id='title'>Привет</h1>
+        <button id='btn'>Кнопка</button>
+
+        <script>
+            const element = document.querySelector('#title');
+            const getBtn = document.querySelector('#btn');
+            console.log(element);
+            console.log(getBtn);
+
+            getBtn.addEventListener('click', () => {
+                if (element.style.display === 'none') {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        </script>
+    </div>
+    <div class="Task2">
+        <p id="description">Меняем цвет</p>
+        <button id="changeColor">Изменить цвет</button>
+        <script>
+            const descriptionEl = document.querySelector('#description');
+            const btnChangeColor = document.querySelector('#changeColor');
+            btnChangeColor.addEventListener('click', () => {
+                descriptionEl.style.color = 'blue';
+            });
+        </script>
+
+    </div>
+    <div class="Task3">
+        <h2 id="title2">Меняем текст</h2>
+        <button id="changeText">Изменить текст</button>
+        <script>
+            const titleEl = document.querySelector('#title2');
+            const btnChangeText = document.querySelector('#changeText');
+            btnChangeText.addEventListener('click', () => {
+                titleEl.textContent = 'Привет, мир!';
+            });
+        </script>
+
+    </div>
+    <div class="Task4">
+        <p class="paragraph">Привет! Нажми на кнопку и измени текст</p>
+        <p class="paragraph">Привет! Нажми на кнопку и измени текст</p>
+        <p class="paragraph">Привет! Нажми на кнопку и измени текст</p>
+
+        <button id="changeText2">Изменить текст параграфа</button>
+        <script>
+            const paragraphEls = document.querySelectorAll('.paragraph');
+            const btnChangeText2 = document.querySelector('#changeText2');
+            btnChangeText2.addEventListener('click', () => {
+                paragraphEls.forEach((element, index) => {
+                    element.textContent = `Молодец! Все получилось ${index + 1}`;
+
+                });
+            });
+        </script>
+    </div>
+    <div class="Task5">
+        <p class="text">Привет! первый паргараф</p>
+        <p class="description">Привет! Этот паргараф нужен</p>
+        <p class="text2">Привет! второй паргараф</p>
+        <p class="description">Привет! Это второй нужный паргараф</p>
+        <p class="text3">Привет! третий паргараф</p>
+        <p class="description">Привет! Это третий нужный паргараф</p>
+        <button id="changeText3">Изменить текст параграфа</button>
+        <script>
+            const descriptionEls = document.querySelectorAll('.description');
+            const btnChangeText3 = document.querySelector('#changeText3');
+            btnChangeText3.addEventListener('click', () => {
+
+                descriptionEls[0].textContent = `Молодец! Все получилось. Это первый параграф`;
+                descriptionEls[1].textContent = `Молодец! Все получилось. Это второй парграф`;
+                descriptionEls[2].textContent = `Молодец! Все получилось. Это третий параграф`;
+
+
+            });
+        </script>
+
+    </div>
+
+
+    <div class="Task6">
+        <button id="addText">Добавить</button>
+        <script>
+
+            const btnAddText = document.querySelector('#addText');
+            btnAddText.addEventListener('click', () => {
+                const newDescription = document.createElement('p');
+                newDescription.textContent = 'Новый абзац';
+                document.body.appendChild(newDescription);
+
+            });
+        </script>
+    </div>
+    <div class="Task7">
+        <p class="text1">Привет! первый паргараф</p>
+        <p class="description1">Привет! Этот паргараф нужно удалить</p>
+        <p class="text1">Привет! второй паргараф</p>
+        <p class="description1">Привет! Этот паргараф нужен</p>
+        <p class="text1">Привет! третий паргараф</p>
+        <p class="description1">Привет! Это второй нужный паргараф</p>
+        <button id='btnRemove'>Удалить</button>
+
+        <script>
+            const description1Els = document.querySelector('.description1');
+            const getBtnRemove = document.querySelector('#btnRemove');
+
+            getBtnRemove.addEventListener('click', () => {
+                description1Els.remove()
+            });
+        </script>
+    </div>
+
+</body>
+
+</html>
