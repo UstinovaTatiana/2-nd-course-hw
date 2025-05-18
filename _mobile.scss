@@ -79,6 +79,44 @@
                 left: 303px;
                 bottom: 79px;
             }
+            &__line{
+                height: 51px;
+                gap: 27px;
+                bottom: 0;
+              
+
+                &-text{
+                    height: 18px;
+                    font-size: 16px;
+                    &_1 {
+                        width: 116px;
+                    }
+    
+                    &_2 {
+                        width: 146px;
+                    }
+    
+                    &_3 {
+                        width: 174px;
+                    }
+    
+                    &_4 {
+                        width:  225px;
+                    }
+    
+                    &_5 {
+                        width: 277px;
+                    }
+    
+                    &_6 {
+                        width: 314px;
+                    }
+                }
+                &-img {
+                    width: 19px;
+                    height: 19px;
+                }
+            }
         }
     }
 

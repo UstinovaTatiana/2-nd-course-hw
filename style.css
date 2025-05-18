@@ -471,6 +471,37 @@ body {
     left: 303px;
     bottom: 79px;
   }
+  .header-main__line {
+    height: 51px;
+    gap: 27px;
+    bottom: 0;
+  }
+  .header-main__line-text {
+    height: 18px;
+    font-size: 16px;
+  }
+  .header-main__line-text_1 {
+    width: 116px;
+  }
+  .header-main__line-text_2 {
+    width: 146px;
+  }
+  .header-main__line-text_3 {
+    width: 174px;
+  }
+  .header-main__line-text_4 {
+    width: 225px;
+  }
+  .header-main__line-text_5 {
+    width: 277px;
+  }
+  .header-main__line-text_6 {
+    width: 314px;
+  }
+  .header-main__line-img {
+    width: 19px;
+    height: 19px;
+  }
   .game {
     display: none;
   }
@@ -803,6 +834,9 @@ body {
   .header-main__img-4 {
     left: 610px;
     bottom: 100px;
+  }
+  .header-main__line {
+    bottom: 0;
   }
   .game {
     display: none;
