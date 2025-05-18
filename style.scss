@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
@@ -15,6 +19,10 @@
 
 a {
     text-decoration: none;
+}
+
+body {
+    background-color: rgb(32, 32, 39);
 }
 
 .header {
@@ -114,40 +122,40 @@ a {
             width: 35px;
         }
 
-        /*&__line {
-        position: absolute;
-        z-index: 2;
-        left: 0px;
-        box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background-color: rgb(188, 236, 48);
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        margin-top: 156px;
-        padding-right: 49px;
-        padding-left: 49px;
-        height: 90px;
-        width: 3220px;
-        gap: 51px;
-        align-items: center;
-        
+        &__line {
+            position: absolute;
+            z-index: 2;
+            left: 0px;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgb(188, 236, 48);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-top: 156px;
+            padding-right: 49px;
+            padding-left: 49px;
+            height: 90px;
+            width: 3220px;
+            gap: 51px;
+            align-items: center;
 
-        &-text {
-            color: rgb(32, 32, 39);
-            font-size: 30px;
-            font-weight: 700;
-            line-height: 110%;
-            text-align: left;
-            text-transform: uppercase;
-            height: 36px;
-        }
 
-        &-img {
-            height: 36px;
-            width: 36px;
+            &-text {
+                color: rgb(32, 32, 39);
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 110%;
+                text-align: left;
+                text-transform: uppercase;
+                height: 36px;
+            }
+
+            &-img {
+                height: 36px;
+                width: 36px;
+            }
         }
-        }*/
     }
 }
 
@@ -165,7 +173,7 @@ a {
 }
 
 .game {
-    background-color: rgb(32, 32, 39);
+    /*background-color: rgb(32, 32, 39);*/
     padding-bottom: 50px;
 
 }
@@ -280,7 +288,7 @@ a {
 }
 
 .main {
-    background-color: rgb(32, 32, 39);
+    /*background-color: rgb(32, 32, 39);*/
     padding-bottom: 144px;
 
     &-game {
