@@ -12,7 +12,7 @@
     }
 
     .header-main {
-        overflow: hidden;
+        
 
         &__img-big {
             right: 0px;
@@ -28,6 +28,7 @@
             left: 940px;
             bottom: 125px;
         }
+        
     }
 
     .box {
@@ -109,7 +110,8 @@
     }
 
     .header-main {
-
+        
+        
         &__title {
             text-align: center;
             font-size: 50px;
@@ -147,6 +149,7 @@
             margin-top: 36px;
             margin-left: 25%;
         }
+        
 
 
     }
@@ -254,8 +257,6 @@
     }
 
     .header-main {
-        overflow: hidden;
-
         &__title {
             text-align: center;
             font-size: 42px;
@@ -295,10 +296,14 @@
             left: 610px;
             bottom: 100px;
         }
+        
+
+    }
+    .wrapper{
         &__line{
             bottom: 0;
+        
         }
-
     }
 
     .game {

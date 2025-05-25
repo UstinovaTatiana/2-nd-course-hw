@@ -6,14 +6,13 @@
 
     .header {
         position: relative;
-
+        overflow: hidden;
 
         &-main {
-
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 700px;
+            height: 649px;
             padding-left: 0px;
             padding-right: 0px;
 
@@ -44,6 +43,7 @@
             }
 
             &__img-big {
+                overflow: hidden;
                 right: -105px;
                 top: -85px;
             }
@@ -68,7 +68,7 @@
                 position: absolute;
                 height: 18px;
                 width: 18px;
-                bottom: 125px;
+                bottom: 74px;
                 left: 272px;
             }
 
@@ -77,45 +77,55 @@
                 height: 41px;
                 width: 39px;
                 left: 303px;
-                bottom: 79px;
+                bottom: 28px;
             }
-            &__line{
-                height: 51px;
-                gap: 27px;
-                bottom: 0;
-              
 
-                &-text{
-                    height: 18px;
-                    font-size: 16px;
-                    &_1 {
-                        width: 116px;
-                    }
-    
-                    &_2 {
-                        width: 146px;
-                    }
-    
-                    &_3 {
-                        width: 174px;
-                    }
-    
-                    &_4 {
-                        width:  225px;
-                    }
-    
-                    &_5 {
-                        width: 277px;
-                    }
-    
-                    &_6 {
-                        width: 314px;
-                    }
+        }
+    }
+
+    .wrapper {
+        height: 51px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        top: 649px;
+
+        &__line {
+
+            gap: 27px;
+
+
+            &-text {
+                height: 18px;
+                font-size: 16px;
+
+                &_1 {
+                    width: 116px;
                 }
-                &-img {
-                    width: 19px;
-                    height: 19px;
+
+                &_2 {
+                    width: 146px;
                 }
+
+                &_3 {
+                    width: 174px;
+                }
+
+                &_4 {
+                    width: 225px;
+                }
+
+                &_5 {
+                    width: 277px;
+                }
+
+                &_6 {
+                    width: 314px;
+                }
+            }
+
+            &-img {
+                width: 19px;
+                height: 19px;
             }
         }
     }
@@ -125,7 +135,7 @@
     }
 
     .main {
-        overflow-x: hidden;
+
         padding-bottom: 49px;
         display: flex;
         justify-content: center;
@@ -165,7 +175,7 @@
 
 
     .game-box {
-        overflow-x: hidden;
+
         margin-bottom: 24px;
         flex-wrap: wrap;
         max-width: 343px;
@@ -203,7 +213,8 @@
                     &_3 {
                         width: 275px;
                     }
-                    &_4{
+
+                    &_4 {
                         width: 245px;
                     }
                 }
@@ -221,7 +232,7 @@
     }
 
     .footer {
-        overflow-x: hidden;
+
         height: 100px;
 
         &__info {
