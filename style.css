@@ -481,7 +481,6 @@ body {
     height: 51px;
     padding-top: 16px;
     padding-bottom: 16px;
-    top: 649px;
   }
   .wrapper__line {
     gap: 27px;
@@ -804,6 +803,9 @@ body {
     padding-left: calc(50% - 384px);
     padding-right: calc(50% - 384px);
   }
+  .header {
+    overflow: hidden;
+  }
   .header-main__title {
     text-align: center;
     font-size: 42px;
@@ -835,9 +837,6 @@ body {
   .header-main__img-4 {
     left: 610px;
     bottom: 100px;
-  }
-  .wrapper__line {
-    bottom: 0;
   }
   .game {
     display: none;
