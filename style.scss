@@ -1,11 +1,27 @@
 * {
     margin: 0;
     padding: 0;
+
+}
+
+@keyframes scroll-left {
+    0% {
+
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
+
 }
 
 .center {
@@ -17,15 +33,21 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: rgb(32, 32, 39);
+}
+
+
 .header {
     background-color: #E1FF8F;
-    overflow-x: hidden;
+    position: relative;
 
     &-main {
-        height: 800px;
+        height: 710px;
         padding-left: 120px;
         padding-right: 120px;
         position: relative;
+        /*overflow-x: hidden;*/
 
         &__title {
             color: rgb(32, 32, 39);
@@ -85,7 +107,7 @@ a {
         &__img-3 {
             position: absolute;
             left: 948px;
-            bottom: 222px;
+            bottom: 132px;
             height: 37px;
             width: 37px;
         }
@@ -95,7 +117,7 @@ a {
             height: 83px;
             width: 83px;
             left: 1013px;
-            bottom: 146px;
+            bottom: 56px;
         }
 
         &__img-1 {
@@ -114,24 +136,35 @@ a {
             width: 35px;
         }
 
-        /*&__line {
+    }
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(188, 236, 48);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+    &__line {
         position: absolute;
-        z-index: 2;
         left: 0px;
-        box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background-color: rgb(188, 236, 48);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin-top: 156px;
-        padding-right: 49px;
-        padding-left: 49px;
-        height: 90px;
-        width: 3220px;
         gap: 51px;
-        align-items: center;
-        
+        animation-name: scroll-left;
+        animation: scroll-left 20s linear infinite;
+        will-change: transform;
+
 
         &-text {
             color: rgb(32, 32, 39);
@@ -140,16 +173,40 @@ a {
             line-height: 110%;
             text-align: left;
             text-transform: uppercase;
-            height: 36px;
+            height: 33px;
+
+            &_1 {
+                width: 217px;
+            }
+
+            &_2 {
+                width: 273px;
+            }
+
+            &_3 {
+                width: 326px;
+            }
+
+            &_4 {
+                width: 422px;
+            }
+
+            &_5 {
+                width: 519px;
+            }
+
+            &_6 {
+                width: 588px;
+            }
         }
 
         &-img {
-            height: 36px;
             width: 36px;
+            height: 36px;
         }
-        }*/
     }
 }
+
 
 
 .box {
@@ -165,12 +222,14 @@ a {
 }
 
 .game {
-    background-color: rgb(32, 32, 39);
+    /*background-color: rgb(32, 32, 39);*/
     padding-bottom: 50px;
+
 
 }
 
 .play {
+
     display: flex;
     flex-wrap: wrap;
     column-gap: 32px;
@@ -280,7 +339,7 @@ a {
 }
 
 .main {
-    background-color: rgb(32, 32, 39);
+    /*background-color: rgb(32, 32, 39);*/
     padding-bottom: 144px;
 
     &-game {
