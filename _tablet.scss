@@ -12,7 +12,7 @@
     }
 
     .header-main {
-        overflow: hidden;
+
 
         &__img-big {
             right: 0px;
@@ -28,6 +28,7 @@
             left: 940px;
             bottom: 125px;
         }
+
     }
 
     .box {
@@ -110,6 +111,7 @@
 
     .header-main {
 
+
         &__title {
             text-align: center;
             font-size: 50px;
@@ -147,6 +149,7 @@
             margin-top: 36px;
             margin-left: 25%;
         }
+
 
 
     }
@@ -253,54 +256,60 @@
         padding-right: calc(50% - 384px);
     }
 
-    .header-main {
+    .header {
         overflow: hidden;
 
-        &__title {
-            text-align: center;
-            font-size: 42px;
-            line-height: 49px;
-            padding-top: 147px;
+        &-main {
+
+            &__title {
+                text-align: center;
+                font-size: 42px;
+                line-height: 49px;
+                padding-top: 147px;
+            }
+
+
+            &__subtitle {
+                font-size: 18px;
+                line-height: 20px;
+                text-align: center;
+                margin-top: 24px;
+                width: 400px;
+                margin-left: 10%;
+
+            }
+
+            &__btn {
+                width: 285px;
+                height: 55px;
+                margin-top: 36px;
+                margin-left: 20%;
+            }
+
+            &__img-big {
+                right: -100px;
+                top: -70px;
+            }
+
+            &__img-3 {
+                bottom: 190px;
+                left: 550px;
+            }
+
+            &__img-4 {
+                left: 610px;
+                bottom: 100px;
+            }
+
+
         }
-
-
-        &__subtitle {
-            font-size: 18px;
-            line-height: 20px;
-            text-align: center;
-            margin-top: 24px;
-            width: 400px;
-            margin-left: 10%;
-
-        }
-
-        &__btn {
-            width: 285px;
-            height: 55px;
-            margin-top: 36px;
-            margin-left: 20%;
-        }
-
-        &__img-big {
-            right: -100px;
-            top: -70px;
-        }
-
-        &__img-3 {
-            bottom: 190px;
-            left: 550px;
-        }
-
-        &__img-4 {
-            left: 610px;
-            bottom: 100px;
-        }
-
     }
+
 
     .game {
         display: none;
     }
+
     .game-box {
         height: 250px;
 
